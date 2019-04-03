@@ -7,17 +7,18 @@ import {
 export default class Header extends React.Component {
 
   render() {
-    return (
-        <div className="container">
+    return ( 
       <div className="row" >
         <div className='col'>
         
-        <h1  style={{textAlign: "right"}} >Babel</h1>
+         <img src="https://nsa40.casimages.com/img/2019/04/03/mini_19040303012396270.png" width="90" height="100" alt="Logo"/>
+        
+        <div className="container"><h1>Babel</h1></div>
         </div>
+        </div>
+        
           
         
-      </div>
-      </div>
     );
   }
 }
