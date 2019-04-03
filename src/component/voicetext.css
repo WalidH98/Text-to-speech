@@ -1,0 +1,7 @@
+textarea {
+  height: 300px;
+  width: 100%;
+  align-content: center;
+  resize: none;
+  overflow:hidden
+}
