@@ -4,9 +4,8 @@
    font-family: 'Lobster', cursive;
    color: white;
    font-size: 48px !important;
-   margin-top: -6% !important;
-   padding-bottom: 2% !important;
-   text-align: end;
+ 
+   
    
   }
   
@@ -20,8 +19,12 @@
 
 
 
-img{
-    margin-left: 7%;
-    margin-top: 1%;
-    margin-bottom: -1%;
+
+
+.navbar-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 60px;
 }
