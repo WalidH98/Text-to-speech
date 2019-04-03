@@ -1,20 +1,12 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import Exemple from './header';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      
-      <div className="App">
-        <header>
-        <Exemple/> 
-        </header>
-        
-      </div>
-    );
-  }
+import React  from 'react';
+import Header  from './Header'
+ class App extends Header {
+    render (){
+        return (
+            <Header/>
+                
+             )
+    }
 }
 
 export default App;

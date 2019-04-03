@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+  h1{
+   font-family: 'Lobster', cursive;
+   color: white;
+  
+   
+  }
+
+.col{
+    background-color: aqua;
+}
