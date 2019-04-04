@@ -13,7 +13,7 @@
 }
 
 .footer-nav-links {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .footer-nav-links:hover {
@@ -38,4 +38,14 @@
 
 .facebook:hover {
     color: #4267B2;
+}
+
+@media screen and (max-width: 576px) {
+    .footer-nav-links {
+        font-size: 0.6rem;
+    }
+    .footer-icons {
+        width: 20px !important;
+        height: 20px !important;
+    }
 }

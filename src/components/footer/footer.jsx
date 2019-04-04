@@ -36,16 +36,16 @@ export default class Footer extends React.Component {
                         <div className="col-6 d-flex justify-content-end align-items-center">
                             <Nav>
                                 <NavItem>
-                                    <NavLink href="/components/" className="android">< FaAndroid size={30}/></NavLink>
+                                    <NavLink href="/components/" className="android">< FaAndroid className='footer-icons' size="30px"/></NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/components/" className="apple">< FaApple size={30}/></NavLink>
+                                    <NavLink href="/components/" className="apple">< FaApple className='footer-icons' size="30px"/></NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/components/" className="twitter">< FaTwitter size={30}/></NavLink>
+                                    <NavLink href="/components/" className="twitter">< FaTwitter className='footer-icons' size="30px"/></NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/components/" className="facebook">< FaFacebookSquare size={30}/></NavLink>
+                                    <NavLink href="/components/" className="facebook">< FaFacebookSquare className='footer-icons' size="30px"/></NavLink>
                                 </NavItem>
                             </Nav>
                         </div>
