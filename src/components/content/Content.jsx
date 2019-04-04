@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Button } from 'reactstrap';
-
+import VoiceText from './voicetext/voicetext'
 
 class Content extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class Content extends React.Component {
           <h2>Service de synthèse vocale en ligne gratuit</h2>
         </div>
         <div className= 'buttonLanguage'/>
-        <div className= 'textArea' />
+        <VoiceText />
         <div>
           <Button color="secondary" size="lg">Lire</Button>{' '}
         </div>
@@ -21,6 +21,6 @@ class Content extends React.Component {
         </div>
       </div>  
     );
-  }
-}
+  };
+};
 export default Content;
