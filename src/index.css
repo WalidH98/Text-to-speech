@@ -16,4 +16,9 @@ h2 p {
   text-align: center;
 }
 
+.bd-highlight {
+
+  background-color: rgba(86,61,124,0.15);
+  border: 1px solid rgba(86,61,124,0.15);
+}
 
