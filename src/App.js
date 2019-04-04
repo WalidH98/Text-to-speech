@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CountrySelect from './Component/CountryList/CountrySelect';
+import CountrySelect from './components/content/menu/CountryList/CountrySelect';
 
 
 class App extends Component {
