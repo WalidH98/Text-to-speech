@@ -3,28 +3,39 @@ import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import VoiceText from './voicetext/voicetext'
 import Lists from './menu/CountryList/CountrySelect'
+import {Container, Row, Col} from 'reactstrap'
 
 class Content extends React.Component {
   render() {
     return (
-      <div class="d-flex align-items-start flex-column bd-highlight mb-3">
-        <div class="justify-content-center p-2 bd-highlight">
+      <Container>
+        <Row>
+          <Col sm={{ size: 12, order: 0, offset: 0 }}>
           <h2>Service de synthèse vocale en ligne gratuit</h2>
-        </div>
-        <div class="justify-content-center p-2 bd-highlight">
-          <Lists />
-        
-        
-          <VoiceText />
-        
-        
-          <Button color="secondary" size="lg">Lire</Button>{' '}
-        </div>
-        <div class="p-2 bd-highlight">
+          </Col>
+        </Row>
+        <Row>
+        <Col sm={{ size: 6, order: 0, offset: 2 }}>
+        <Lists />
+        </Col>
+        </Row>
+        <Row>
+        <Col sm={{ size: 12, order: 0, offset: 0 }}>
+        <VoiceText />
+        </Col>
+        </Row>
+        <Row>
+        <Col sm={{ size: 2, order: 0, offset: 8 }}>
+        <Button color="secondary" size="lg">Lire</Button>{' '}
+        </Col>
+        </Row>
+        <Row>
+        <Col sm={{ size: 12, order: 0, offset: 0 }}>
           <p>Avec BABEL, saisisez votre texte dans la langue de votre choix et ECOUTEZ !!!
-          </p>
-        </div>
-      </div>  
+          </p>  
+        </Col>
+        </Row>
+      </Container>  
     );
   };
 };
