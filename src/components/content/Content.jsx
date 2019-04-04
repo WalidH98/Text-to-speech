@@ -11,7 +11,7 @@ class Content extends React.Component {
         <div class="justify-content-center p-2 bd-highlight">
           <h2>Service de synthèse vocale en ligne gratuit</h2>
         </div>
-        <div class="p-2 bd-highlight">
+        <div class="justify-content-center p-2 bd-highlight">
           <Lists />
         
         
