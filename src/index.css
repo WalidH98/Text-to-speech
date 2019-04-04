@@ -16,9 +16,23 @@ h2 p {
   text-align: center;
 }
 
+/*position of content */
 #country {
   width : 97%; 
-  
 }
-
+#margin1{
+  margin-top: 60px;
+}
+#margin2{
+  margin-top: 60px;
+}
+#margin3{
+  margin-top: 20px;
+}
+#margin4{
+  margin-top: 20px;
+}
+#margin5{
+  margin-top: 50px;
+}
 
