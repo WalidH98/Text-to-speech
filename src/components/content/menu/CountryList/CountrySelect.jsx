@@ -3,7 +3,7 @@ import React from 'react';
 import { countries } from './countriesData';
 
 
-const lists = () => (
+const Lists = () => (
     <div>
         <select name="country" id="country">
         {
@@ -16,4 +16,4 @@ const lists = () => (
 )
 
 
-export default lists;
+export default Lists;
