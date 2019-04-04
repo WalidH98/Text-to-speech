@@ -1,92 +1,118 @@
 const countries = [
     {
-        name: "Catalan"
+        name: "Catalan",
+        code: 'ad'
 
     },
     {
-        name: "China"
+        name: "China",
+        code: 'cn'
     },
     {
-        name: "Hong Kong"
+        name: "Hong Kong",
+        code: 'hk'
 
     },
     {
-        name: "Taiwan"
+        name: "Taiwan",
+        code: 'tw'
     },
     {
-        name: "Denmark"
+        name: "Denmark",
+        code: 'dk'
 
     },
     {
-        name: "Netherlands"
+        name: "Netherlands",
+        code: 'nl'
 
     },
     {
-        name: "Australia"
+        name: "Australia",
+        code: 'au'
 
     },
     {
-        name: "English"
+        name: "English",
+        code: 'gb'
 
     },
     {
-        name: "India"
+        name: "India",
+        code: 'in'
     },
     {
-        name: "United States"
+        name: "United States",
+        code: 'us'
 
     },
     {
-        name: "Finland"
+        name: "Finland",
+        code: 'fl'
 
     },
     {
-        name: "Canada(EN)"
+        name: "Canada(EN)",
+        code: 'ca'
     },
     {
-        name: "Canada(FR)"
+        name: "Canada(FR)",
+        code: 'ca'
     },
     {
-        name: "French"
+        name: "French",
+        code: 'fr'
     },
     {
-        name: "Germany"
+        name: "Germany",
+        code: 'de'
 
     },
     {
-        name: "Italy"
+        name: "Italy",
+        code: 'it'
     },
     {
-        name: "Japan"
+        name: "Japan",
+        code: 'jp'
     },
     {
-        name: "Korea"
+        name: "Korea",
+        code: 'kr'
 
     },
     {
-        name: "Norway"
+        name: "Norway",
+        code: 'no'
     },
     {
-        name: "Poland"
+        name: "Poland",
+        code: 'pl'
     },
     {
-        name: "Brazil"
+        name: "Brazil",
+        code: 'br'
     },
     {
-        name: "Portugal"
+        name: "Portugal",
+        code: 'pt'
 
     },
     {
-        name: "Russia"
+        name: "Russia",
+        code: 'ru'
     },
     {
-        name: "Mexico"
+        name: "Mexico",
+        code: 'mx'
     },
     {
-        name: "Spain"
+        name: "Spain",
+        code: 'es'
     },
     {
-        name: "Sweden"
+        name: "Sweden",
+        code: 'se'
     }
 ];
 
