@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import VoiceText from "./component/voicetext";
+import VoiceText from "./components/content/voicetext/voicetext";
 
 class App extends Component {
   render() {
