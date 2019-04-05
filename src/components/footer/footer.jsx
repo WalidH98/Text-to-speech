@@ -1,39 +1,39 @@
 import React from 'react';
 import './footer.css';
-import { NavItem, NavLink, Nav } from 'reactstrap';
+import { NavItem, NavLink, Nav, Container, Row, Col } from 'reactstrap';
 import { FaAndroid, FaApple, FaFacebookSquare, FaTwitter } from 'react-icons/fa';
 export default class Footer extends React.Component {
 
     render() {
         return (
             <div className="footer-content">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-6">
+                <Container>
+                    <Row>
+                        <Col xs="6">
                             <Nav>
-                                <div className="row">
-                                    <div className="col-12">
+                                <Row>
+                                    <Col xs="12">
                                         <NavItem>
                                             <NavLink href="/components/" className="footer-nav-links">Mentions légales</NavLink>
                                         </NavItem>
                                         <NavItem>
                                             <NavLink href="/components/" className="footer-nav-links">FAQ</NavLink>
                                         </NavItem>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-12">
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs="12">
                                         <NavItem>
                                             <NavLink href="/components/" className="footer-nav-links">Aide</NavLink>
                                         </NavItem>
                                         <NavItem>
                                             <NavLink href="/components/" className="footer-nav-links">Contact</NavLink>
                                         </NavItem>  
-                                    </div>
-                                </div>
+                                    </Col>
+                                </Row>
                             </Nav>
-                        </div>
-                        <div className="col-6 d-flex justify-content-end align-items-center">
+                        </Col>
+                        <Col xs="6" className=" d-flex justify-content-end align-items-center">
                             <Nav>
                                 <NavItem>
                                     <NavLink href="/components/" className="android">< FaAndroid className='footer-icons' size="30px"/></NavLink>
@@ -48,9 +48,9 @@ export default class Footer extends React.Component {
                                     <NavLink href="/components/" className="facebook">< FaFacebookSquare className='footer-icons' size="30px"/></NavLink>
                                 </NavItem>
                             </Nav>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         );
     }
