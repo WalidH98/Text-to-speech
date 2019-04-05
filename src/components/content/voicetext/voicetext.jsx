@@ -3,7 +3,7 @@ import './voicetext.css';
 import { Container, Row, Col } from 'reactstrap';
 
 const VoiceText = () => (
-  <textarea class="center" placeholder="Write your speech here ..." name="speech"/>
+  <textarea class="center" placeholder="Ecrivez votre texte ici ..." name="speech"/>
 );
 
 export default VoiceText;

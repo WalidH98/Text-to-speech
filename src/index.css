@@ -12,7 +12,9 @@ code {
 
 #fond{
   background-color: rgb(243, 243, 243);
-  margin: -6rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+  
 }
 h2 p {
   font-family: 'Quicksand', sans-serif;
@@ -34,12 +36,24 @@ h2 p {
   margin-top: 5rem !important;
 }
 #margin3{
-  margin-top: 0.5rem !important;
+  margin-top: 2rem !important;
 }
 #margin4{
   margin-top: 1rem !important;
 }
 #margin5{
   margin-top:2rem !important;
+  margin-bottom: 2rem !important;
 }
+
+.newbutton{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  border-radius: 0.3rem;
+  padding-bottom: 20px;
+}
+  
+
 

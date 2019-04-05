@@ -10,7 +10,7 @@ class Content extends React.Component {
     return (
       <Container fluid className="noPadding" id="fond">
         <Row id="margin1">
-          <Col sm={{ size: 12, order: 0, offset: 0 }}>
+          <Col sm={{ size: 8, order: 0, offset: 3 }}>
           <h2>Service de synthèse vocale en ligne gratuit</h2>
           </Col>
         </Row>
@@ -25,12 +25,12 @@ class Content extends React.Component {
         </Col>
         </Row>
         <Row id="margin4">
-        <Col sm={{ size: 3, order: 0, offset: 9 }}>
-        <Button color="secondary" size="lg">Lire</Button>{' '}
+        <Col sm={{ size: 2, order: 0, offset: 9 }}>
+        <Button className="newbutton" color="secondary" size="lg">Lire</Button>
         </Col>
         </Row>
         <Row id="margin5">
-        <Col sm={{ size: 12, order: 0, offset: 0 }}>
+        <Col sm={{ size: 9, order: 0, offset: 3 }}>
           <p>Avec BABEL, saisisez votre texte dans la langue de votre choix et ECOUTEZ !!!
           </p>  
         </Col>
