@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import CountrySelect from './components/content/menu/CountryList/CountrySelect';
 
