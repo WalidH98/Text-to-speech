@@ -12,6 +12,7 @@ code {
 
 #fond{
   background-color: rgb(243, 243, 243);
+  margin: -6rem;
 }
 h2 p {
   font-family: 'Quicksand', sans-serif;
