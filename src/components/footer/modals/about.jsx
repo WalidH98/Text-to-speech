@@ -25,17 +25,16 @@ class AboutUs extends React.Component {
             <div>
                 <NavLink className="footer-modal" onClick={this.toggle}>A propos</NavLink>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                    <ModalHeader toggle={this.toggle} close={closeBtn}>Modal title</ModalHeader>
+                    <ModalHeader toggle={this.toggle} close={closeBtn}>A propos de nous</ModalHeader>
                     <ModalBody>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.
+                        <p>Peu après le Déluge, alors qu'ils parlent tous la même langue, les hommes atteignent une plaine dans le pays de Shinar et s'y installent tous. Là, ils entreprennent par eux-mêmes de bâtir une ville et une tour dont le sommet touche le ciel, pour se faire un nom. Alors Dieu brouille leur langue afin qu'ils ne se comprennent plus, et les disperse sur toute la surface de la Terre. La construction cesse. La ville est alors nommée Babel.</p>
+
+                        <p>C'est dans ce cadre que notre équipe de choc a décidé de vous pésenter ce petit projet.</p>
+
+                        <p>Nous sommes une equipe marseillaise de 5 personne, motivée et dynamique.</p>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-                        <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+                        <Button color="dark" onClick={this.toggle}>Fermer</Button>
                     </ModalFooter>
                 </Modal>
             </div>
