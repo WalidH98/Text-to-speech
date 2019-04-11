@@ -8,6 +8,7 @@
     "react": "^16.8.6",
     "react-country-flag": "^1.0.2",
     "react-dom": "^16.8.6",
+    "react-flags-select": "^1.1.10",
     "react-scripts": "2.1.8",
     "reactstrap": "^7.1.0"
   },
