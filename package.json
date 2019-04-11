@@ -6,10 +6,10 @@
     "bootstrap": "^4.3.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
-    "react-country-flag": "^1.0.2",
     "react-dom": "^16.8.6",
     "react-flags-select": "^1.1.10",
     "react-scripts": "2.1.8",
+    "react-select": "^2.4.2",
     "reactstrap": "^7.1.0"
   },
   "scripts": {
