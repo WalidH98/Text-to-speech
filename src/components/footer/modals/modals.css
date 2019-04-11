@@ -1,0 +1,10 @@
+.footer-modal:hover {
+    color:white !important;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.footer-modal {
+    font-size: 0.8rem;
+    color: dimgray !important;
+}

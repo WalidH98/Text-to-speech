@@ -2,6 +2,10 @@ import React from 'react';
 import './footer.css';
 import { NavItem, NavLink, Nav, Container, Row, Col } from 'reactstrap';
 import { FaAndroid, FaApple, FaFacebookSquare, FaTwitter } from 'react-icons/fa';
+import AboutUs from './modals/about.jsx';
+import Contact from './modals/contact.jsx';
+import Faq from './modals/faq.jsx';
+import MentionsLegales from './modals/mentions-legales.jsx'
 export default class Footer extends React.Component {
 
     render() {
@@ -14,20 +18,20 @@ export default class Footer extends React.Component {
                                 <Row>
                                     <Col xs="12">
                                         <NavItem>
-                                            <NavLink href="/components" className="footer-nav-links">Mentions légales</NavLink>
+                                            <MentionsLegales/>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href="/components" className="footer-nav-links">FAQ</NavLink>
+                                            <Faq/>
                                         </NavItem>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col xs="12">
                                         <NavItem>
-                                            <NavLink href="/components" className="footer-nav-links">Aide</NavLink>
+                                            <AboutUs/>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href="/components" className="footer-nav-links">Contact</NavLink>
+                                            <Contact/>
                                         </NavItem>  
                                     </Col>
                                 </Row>

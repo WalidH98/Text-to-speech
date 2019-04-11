@@ -1,23 +1,9 @@
-
 .footer-content {
     background-color: #CCCCCC;
 }
 
 .nav-item {
     list-style-type: none;
-}
-
-.nav-link {
-    color: white;
-    padding: 0.5rem !important;
-}
-
-.footer-nav-links {
-    font-size: 0.8rem;
-}
-
-.footer-nav-links:hover {
-    color: dimgrey;
 }
 
 .android, .apple, .twitter, .facebook {
