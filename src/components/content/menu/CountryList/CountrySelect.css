@@ -1,28 +1,23 @@
-.flag-select{
-    border: 1px solid grey;
-    border-radius: 3px 3px 3px 3px;
-    /* padding-right: 300px; */
-    padding-top: 5px;
+.flag-select {
+  border: 1px solid grey;
+  border-radius: 3px 3px 3px 3px;
+  padding-top: 5px;
 }
 
 .flag-menu {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-
-
 .country-flag img {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
 }
 
 .flag-option {
-    padding-right: 267px !important;
-
+  padding-right: 267px !important;
 }
 
 .arrow-down {
-    padding-left: 300px !important;
+  padding-left: 300px !important;
 
 }
-
