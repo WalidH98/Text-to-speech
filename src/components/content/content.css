@@ -36,4 +36,9 @@ code {
   margin: 2rem 0 2rem 0;
 }
 
-
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+}
