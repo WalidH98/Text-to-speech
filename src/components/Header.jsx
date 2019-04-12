@@ -12,7 +12,10 @@ export default class Header extends React.Component {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
         
+=======
+>>>>>>> 3846b00c3db9d9a0fe0fd38be90056b9947ca6d4
     );
   }
 }
