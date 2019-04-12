@@ -2,23 +2,39 @@ import React from 'react';
 
 import { Button } from 'reactstrap';
 import VoiceText from './voicetext/voicetext';
-import Lists from './menu/CountryList/CountrySelect';
+import CountrySelect from './menu/CountryList/CountrySelect';
 import { Container, Row, Col } from 'reactstrap';
+import { convertIsoCode } from '../../utils/languageConvertion';
 import './content.css';
 
 class Content extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: '',
+      textAreaValue: ''
+    };
+  }
+
+  buildRequest(field, value) {
+    if (field === 'language') {
+      value = convertIsoCode(value);
+    }
+    this.setState({ [field]: value });
+  }
+
   render() {
     return (
       <Container fluid className="noPadding" id="fond">
         <h2 className='text-center title'>Service de synthèse vocale en ligne gratuit</h2>
         <Row>
           <Col sm={{ size: 5, order: 0, offset: 1 }}>
-            <Lists />
+            <CountrySelect buildRequest={(field, value) => this.buildRequest(field, value)} />
           </Col>
         </Row>
         <Row>
           <Col sm={{ size: 10, order: 0, offset: 1 }}>
-            <VoiceText />
+            <VoiceText buildRequest={(field, value) => this.buildRequest(field, value)} textAreaValue={this.state.textAreaValue} />
           </Col>
         </Row>
         <Row>
