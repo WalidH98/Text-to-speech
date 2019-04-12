@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-import './App.css';
 
-import VoiceText from './components/content/voicetext/voicetext';
+import './App.css';
+import Footer from './components/footer/footer.jsx';
+
+import Content from './components/content/Content';
+import Header from './components/Header';
 
 class App extends Component {
   render() {
     return (
-      <VoiceText />
+      <div className="App">
+        <Header/>
+        <Content />
+        <Footer/>
+      </div>
     );
   }
 }
