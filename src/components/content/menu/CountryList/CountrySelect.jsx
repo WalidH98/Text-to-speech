@@ -4,6 +4,7 @@ import 'react-flags-select/css/react-flags-select.css';
 import './CountrySelect.css';
 
 export default class CountrySelect extends Component {
+
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -19,7 +20,7 @@ export default class CountrySelect extends Component {
 					customLabels={{ 'AD': 'Catalan', 'CN': 'Chine', 'HK': 'Hong Kong', 'TW': 'Taiwan', 'DK': 'Danemark', 'NL': 'Pays-Bas', 'AU': 'Australie', 'GB': 'Anglais', 'IN': 'Inde', 'US': 'États-Unis', 'FL': 'Finlande', 'CA': 'Canada(FR)', 'FR': 'France', 'DE': 'Allemagne', 'IT': 'Italie', 'JP': 'Japon', 'KR': 'Corée', 'NO': 'Norvège', 'PL': 'Pologne', 'BR': 'Brésil', 'PT': 'Portugal', 'RU': 'Russe', 'MX': 'Mexique', 'ES': 'Espagne', 'SE': 'Suède' }}
 					defaultCountry={this.state.selectedCountry}
 					onSelect={(countryCode) => {
-						this.props.updateAppState('langauge', `${countryCode.toLocaleLowerCase()}-${countryCode.toLocaleLowerCase()}`)
+						this.props.buildRequest('language', `${countryCode.toLocaleLowerCase()}-${countryCode.toLocaleLowerCase()}`)
 					}}
 				/>
 			</div>
