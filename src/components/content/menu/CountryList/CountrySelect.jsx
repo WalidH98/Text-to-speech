@@ -23,6 +23,6 @@ export default class CountrySelect extends Component {
 					}}
 				/>
 			</div>
-		)
+		);
 	}
 }
