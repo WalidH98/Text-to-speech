@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Footer from './components/footer/footer.jsx';
-
-<<<<<<< HEAD
-=======
 import Content from './components/content/Content';
 import Header from './components/Header';
 
->>>>>>> 3846b00c3db9d9a0fe0fd38be90056b9947ca6d4
 class App extends Component {
   constructor(props) {
     super(props);
@@ -77,17 +73,10 @@ class App extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-      <div className='App'>
-
-        <CountrySelect
-          updateAppState={(field, value) => this.updateAppState(field, value)} />
-=======
       <div className="App">
         <Header/>
         <Content />
         <Footer/>
->>>>>>> 3846b00c3db9d9a0fe0fd38be90056b9947ca6d4
       </div>
     );
   }
