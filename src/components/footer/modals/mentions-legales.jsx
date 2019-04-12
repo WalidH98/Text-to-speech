@@ -34,7 +34,7 @@ class MentionsLegales extends React.Component {
                         mollit anim id est laborum.
           </ModalBody>
           <ModalFooter>
-            <Button color="secondary" onClick={this.toggle}>Mentions légales</Button>
+            <Button color="secondary" onClick={this.toggle}>Fermer</Button>
           </ModalFooter>
         </Modal>
       </div>
