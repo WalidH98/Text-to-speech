@@ -12,14 +12,14 @@ class Content extends React.Component {
     this.state = {
       language: '',
       textAreaValue: ''
-    }
+    };
   }
 
   buildRequest(field, value) {
     if (field === 'language') {
-      value = convertIsoCode(value)
+      value = convertIsoCode(value);
     }
-    this.setState({ [field]: value })
+    this.setState({ [field]: value });
   }
 
   render() {
