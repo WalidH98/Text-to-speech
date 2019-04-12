@@ -1,10 +1,15 @@
-.footer-modal:hover {
-    color:white !important;
-    font-size: 0.8rem;
-    cursor: pointer;
+.footer-modal {
+  color: dimgray !important;
+  font-size: 0.8rem !important;
 }
 
-.footer-modal {
-    font-size: 0.8rem;
-    color: dimgray !important;
+.footer-modal:hover {
+  color: white !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-modal {
+    margin: 1rem 0 1rem 0;
+  }
 }

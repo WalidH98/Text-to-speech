@@ -1,37 +1,57 @@
 .footer-content {
-    background-color: #CCCCCC;
+  background-color: #CCCCCC;
 }
 
 .nav-item {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.android, .apple, .twitter, .facebook {
-    color: black;
-
+.android,
+.apple,
+.twitter,
+.facebook {
+  color: black;
 }
+
 .android:hover {
-    color: #96C13E;
+  color: #96C13E;
 }
 
 .apple:hover {
-    color: white;
+  color: white;
 }
 
 .twitter:hover {
-    color: #1CA1F2;
+  color: #1CA1F2;
 }
 
 .facebook:hover {
-    color: #4267B2;
+  color: #4267B2;
 }
 
-@media screen and (max-width: 576px) {
-    .footer-nav-links {
-        font-size: 0.6rem;
-    }
-    .footer-icons {
-        width: 20px !important;
-        height: 20px !important;
-    }
+.align-footer-left {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.align-footer-right {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .align-footer-left {
+    justify-content: center;
+  }
+
+  .align-footer-right {
+    justify-content: center;
+  }
+
+  .on-line {
+    flex-direction: column;
+    text-align: center;
+  }
 }

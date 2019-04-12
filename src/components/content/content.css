@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#fond{
+  background-color: rgb(243, 243, 243);
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.new-button{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  border-radius: 0.3rem;
+  padding-bottom: 20px;
+}
+  
+.title {
+  margin: 3rem 0 3rem 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.text-description {
+  margin: 2rem 0 2rem 0;
+}
+
+

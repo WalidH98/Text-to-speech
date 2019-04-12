@@ -50,13 +50,13 @@ class Contact extends React.Component {
                 <Label for="exampleFile">Ajouter un fichier</Label>
                 <Input type="file" name="file" id="exampleFile" />
                 <FormText color="muted">
-                            Vous pouvez ajouter un fichier pour une recommandation ou pour signaler un bug
+                  Vous pouvez ajouter un fichier pour une recommandation ou pour signaler un bug
                 </FormText>
               </FormGroup>
               <FormGroup check>
                 <Label check>
                   <Input type="checkbox" />{' '}
-                            Je ne suis pas un robot
+                  Je ne suis pas un robot
                 </Label>
               </FormGroup>
             </Form>
@@ -66,7 +66,7 @@ class Contact extends React.Component {
             <Button onClick={this.toggle}>Envoyer</Button>
           </ModalFooter>
         </Modal>
-                
+
       </div>
     );
   }

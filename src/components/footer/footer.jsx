@@ -10,46 +10,46 @@ export default class Footer extends React.Component {
 
   render() {
     return (
-      <div className="footer-content">
+      <div className='footer-content'>
         <Container>
           <Row>
-            <Col xs="6">
-              <Nav>
+            <Col className="align-footer-left" xs="12" md="6">
+              <Nav className="on-line">
                 <Row>
                   <Col xs="12">
                     <NavItem>
-                      <MentionsLegales/>
+                      <MentionsLegales />
                     </NavItem>
                     <NavItem>
-                      <Faq/>
+                      <Faq />
                     </NavItem>
                   </Col>
                 </Row>
                 <Row>
                   <Col xs="12">
                     <NavItem>
-                      <AboutUs/>
+                      <AboutUs />
                     </NavItem>
                     <NavItem>
-                      <Contact/>
-                    </NavItem>  
+                      <Contact />
+                    </NavItem>
                   </Col>
                 </Row>
               </Nav>
             </Col>
-            <Col xs="6" className="d-flex justify-content-end align-items-center">
+            <Col xs="12" md="6" className="align-footer-right align-items-center">
               <Nav>
                 <NavItem>
-                  <NavLink href="/components" className="android">< FaAndroid className='footer-icons' size="30px"/></NavLink>
+                  <NavLink href="/components" className="android">< FaAndroid className='footer-icons' size="40px" /></NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components" className="apple">< FaApple className='footer-icons' size="30px"/></NavLink>
+                  <NavLink href="/components" className="apple">< FaApple className='footer-icons' size="40px" /></NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components" className="twitter">< FaTwitter className='footer-icons' size="30px"/></NavLink>
+                  <NavLink href="/components" className="twitter">< FaTwitter className='footer-icons' size="40px" /></NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components" className="facebook">< FaFacebookSquare className='footer-icons' size="30px"/></NavLink>
+                  <NavLink href="/components" className="facebook">< FaFacebookSquare className='footer-icons' size="40px" /></NavLink>
                 </NavItem>
               </Nav>
             </Col>

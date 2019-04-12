@@ -4,7 +4,7 @@ import 'react-flags-select/css/react-flags-select.css';
 import './CountrySelect.css';
 
 const Lists = () => (
-  <div className="flag-menu">
+  <div className="flag-menu container">
     <h6>Choisir la langue:</h6>
     <ReactFlagsSelect
       countries={['AD', 'CN', 'HK', 'TW', 'DK', 'NL', 'AU', 'GB', 'IN', 'US', 'FL', 'CA', 'FR', 'DE', 'IT', 'JP', 'KR', 'NO', 'PL', 'BR', 'PT', 'RU', 'MX', 'ES', 'SE']}
