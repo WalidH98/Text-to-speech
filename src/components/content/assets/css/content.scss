@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#fond {
+  background-color: rgb(243, 243, 243);
+  padding-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+  background-color: grey;
+  background-image: url('https://image.noelshack.com/fichiers/2019/15/5/1555095926-snow-landscape-2-wallpaper-2560x1440.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  margin: 7rem 0 5rem 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  color: white;
+}
+
+.text-description {
+  margin: 5rem 0 15rem 0;
+  color: white;
+}
+
+.listen {
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.trad {
+  margin-top: 1rem;
+}
+
+.listen-icon,
+.trad-icon {
+  margin-left: 0.5rem;
+}
+
+.trad-icon {
+  margin-left: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}

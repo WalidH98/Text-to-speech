@@ -1,0 +1,31 @@
+#footer-links-call-modal-global {
+  .modal-content {
+    background-color: whitesmoke !important;
+  }
+  .footer-modal {
+    font-size: 0.9rem !important;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+  }
+  
+  .modal-header {
+    border-bottom: none !important;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+  }
+  
+  .modal-footer {
+    border-top: none !important;
+  }
+}
+
+.footer-modal-links:hover {
+  color: gray !important;
+  cursor: pointer;
+}
+
+#form-contact {
+  input, select, textarea {
+    border: none;
+  }
+}

@@ -1,0 +1,30 @@
+.login {
+  border-radius: 20px !important;
+  margin-top: 2rem;
+}
+
+#login-modal {
+  .modal-header {
+    border-bottom: none !important;
+  }
+  
+  .modal-footer {
+    border-top: none !important;
+  }
+  
+  .login-btn-modal {
+    border-radius: 20px !important;
+  }
+  
+  .login-close-modal {
+    border-radius: 20px !important;
+  }
+  
+  .form-control {
+    border: none !important;
+  }
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+}
+
