@@ -16,7 +16,7 @@ class Content extends React.Component {
     this.state = {
       language: '',
       textAreaValue: ''
-    }
+    };
   }
   buildRequest(field, value) {
     if (field === 'language') {

@@ -3,7 +3,6 @@ import ReactFlagsSelect from 'react-flags-select';
 import 'react-flags-select/css/react-flags-select.css';
 import './assets/css/countryselect.scss';
 
-
 export default class CountrySelect extends Component {
 
   constructor(props) {
