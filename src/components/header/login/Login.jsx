@@ -28,11 +28,11 @@ class LogIn extends React.Component {
   }
   render() {
     const closeBtn = <button className="close" onClick={this.toggle}>&times;</button>;
-    const colorLogin = this.state.isConnected ? 'login-btn1' : 'login-btn2'
-    const connecte = this.state.isConnected ? 'se déconnecter' : 'se connecter'
+    const colorLogin = this.state.isConnected ? 'login-btn1' : 'login-btn2';
+    const connecte = this.state.isConnected ? 'se déconnecter' : 'se connecter';
     // permet de se deconnecter sans passer par la modal
-    const buttonAction = this.state.isConnected ? () => this.setState({isConnected: false}) : this.toggle
-    console.log(this.state)
+    const buttonAction = this.state.isConnected ? () => this.setState({isConnected: false}) : this.toggle;
+    console.log(this.state);
     return (
       <div>
         <Button className={colorLogin} outline color="info" onClick={buttonAction} >{connecte}</Button>

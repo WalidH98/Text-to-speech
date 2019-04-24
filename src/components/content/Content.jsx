@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Container, Row, Col } from 'reactstrap';
 import { convertIsoCode } from '../../utils/languageConversion';
 import VoiceText from './voicetext/voicetext';
@@ -7,7 +6,6 @@ import CountrySelect from './menu/CountrySelect';
 import Footer from '../footer/footer.jsx';
 import Header from '../header/Header.jsx';
 import Listen from './listen/Listen';
-// import Equalizer from './equalizer-btn/Download';
 import './assets/css/content.scss';
 import Axios from 'axios';
 import Download from './equalizer-btn/Download';
@@ -31,12 +29,12 @@ class Content extends React.Component {
   }
   callApi () {
     Axios.get(`${baseUrl}&hl=${this.state.language}&src=${this.state.textAreaValue}&b64=true`)
-    .then((reponse) => {
-      this.setState({ audioFile: reponse.data})
-    })
+      .then((reponse) => {
+        this.setState({ audioFile: reponse.data});
+      });
   }
   render() {
-    console.log(this.state)
+    console.log(this.state);
     return (
       <Container fluid className="noPadding" id="fond">
         <Header />
