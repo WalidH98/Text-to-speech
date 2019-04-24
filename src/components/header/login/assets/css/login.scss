@@ -1,6 +1,15 @@
-.login {
+.login-btn1 {
   border-radius: 20px !important;
   margin-top: 2rem;
+  color: red !important;
+  border-color: red !important;
+}
+
+.login-btn2 {
+  border-radius: 20px !important;
+  margin-top: 2rem;
+  color: green !important;
+  border-color: green !important;
 }
 
 #login-modal {

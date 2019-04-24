@@ -7,15 +7,20 @@ import CountrySelect from './menu/CountrySelect';
 import Footer from '../footer/footer.jsx';
 import Header from '../header/Header.jsx';
 import Listen from './listen/Listen';
-import Equalizer from './equalizer-btn/Equalizer';
+// import Equalizer from './equalizer-btn/Download';
 import './assets/css/content.scss';
+import Axios from 'axios';
+import Download from './equalizer-btn/Download';
+
+const baseUrl = `http://api.voicerss.org/?key=${process.env.REACT_APP_TEXT_TO_SPEECH_API_KEY}`;
 
 class Content extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      language: '',
-      textAreaValue: ''
+      language: 'fr-fr',
+      textAreaValue: '',
+      audioFile: ''
     };
   }
   buildRequest(field, value) {
@@ -24,8 +29,14 @@ class Content extends React.Component {
     }
     this.setState({[field]: value});
   }
-
+  callApi () {
+    Axios.get(`${baseUrl}&hl=${this.state.language}&src=${this.state.textAreaValue}&b64=true`)
+    .then((reponse) => {
+      this.setState({ audioFile: reponse.data})
+    })
+  }
   render() {
+    console.log(this.state)
     return (
       <Container fluid className="noPadding" id="fond">
         <Header />
@@ -42,8 +53,12 @@ class Content extends React.Component {
         </Row>
         <Row>
           <Col className="d-flex justify-content-end" sm={{ size: 10, order: 0, offset: 1 }}>
-            <Listen />
-            <Equalizer />
+            <audio hidden
+              controls autoPlay
+              src={this.state.audioFile}>
+            </audio>
+            <Listen makeApiCall={() => this.callApi()}/>
+            <Download />
           </Col>
         </Row>
         <Col sm={{ size: 10, order: 0, offset: 1 }}>
