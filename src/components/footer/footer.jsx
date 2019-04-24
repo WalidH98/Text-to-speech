@@ -1,11 +1,11 @@
 import React from 'react';
-import './footer.css';
+import './assets/css/footer.scss';
 import { NavItem, NavLink, Nav, Container, Row, Col } from 'reactstrap';
 import { FaAndroid, FaApple, FaFacebookSquare, FaTwitter } from 'react-icons/fa';
-import AboutUs from './modals/about.jsx';
-import Contact from './modals/contact.jsx';
-import Faq from './modals/faq.jsx';
-import MentionsLegales from './modals/mentions-legales.jsx';
+import AboutUs from './modals-footer/about.jsx';
+import Contact from './modals-footer/contact.jsx';
+import Faq from './modals-footer/faq.jsx';
+import MentionsLegales from './modals-footer/mentions-legales.jsx';
 export default class Footer extends React.Component {
 
   render() {
@@ -13,43 +13,29 @@ export default class Footer extends React.Component {
       <div className='footer-content'>
         <Container>
           <Row>
-            <Col className="align-footer-left" xs="12" md="6">
-              <Nav className="on-line">
-                <Row>
-                  <Col xs="12">
-                    <NavItem>
-                      <MentionsLegales />
-                    </NavItem>
-                    <NavItem>
-                      <Faq />
-                    </NavItem>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col xs="12">
-                    <NavItem>
-                      <AboutUs />
-                    </NavItem>
-                    <NavItem>
-                      <Contact />
-                    </NavItem>
-                  </Col>
-                </Row>
-              </Nav>
+            <Col xs="12">
+              <div className="d-flex flex-row justify-content-around">
+                <MentionsLegales />
+                <Faq />
+                <AboutUs />
+                <Contact />
+              </div>
             </Col>
-            <Col xs="12" md="6" className="align-footer-right align-items-center">
+          </Row>
+          <Row>
+            <Col xs="12" className="d-flex justify-content-center foot-icons">
               <Nav>
                 <NavItem>
-                  <NavLink href="/components" className="android">< FaAndroid className='footer-icons' size="40px" /></NavLink>
+                  <NavLink href="https://www.android.com/" className="android for-responsive">< FaAndroid className='footer-icons' size="30px" /></NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components" className="apple">< FaApple className='footer-icons' size="40px" /></NavLink>
+                  <NavLink href="https://www.apple.com/fr/ios/app-store/" className="apple for-responsive">< FaApple className='footer-icons' size="30px" /></NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components" className="twitter">< FaTwitter className='footer-icons' size="40px" /></NavLink>
+                  <NavLink href="https://twitter.com/?lang=fr" className="twitter for-responsive">< FaTwitter className='footer-icons' size="30px" /></NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components" className="facebook">< FaFacebookSquare className='footer-icons' size="40px" /></NavLink>
+                  <NavLink href="https://fr-fr.facebook.com/" className="facebook for-responsive">< FaFacebookSquare className='footer-icons' size="30px" /></NavLink>
                 </NavItem>
               </Nav>
             </Col>
