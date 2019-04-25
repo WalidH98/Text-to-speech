@@ -20,14 +20,16 @@ class Content extends React.Component {
       language: 'fr-fr',
       textAreaValue: '',
       audioFile: '',
-      title: 'Service de synthèse vocale'
+      title: 'Service de synthèse vocale',
+      requested: false
     };
+    this.player = React.createRef();
   }
   buildRequest(field, value) {
     if (field === 'language') {
       value = convertIsoCode(value);
     }
-    this.setState({[field]: value});
+    this.setState({[field]: value, requested: false});
   }
   buildTitle(state, val) {
     if (state === 'title') {
@@ -37,13 +39,26 @@ class Content extends React.Component {
   }
   
   callApi () {
-    Axios.get(`${baseUrl}&hl=${this.state.language}&src=${this.state.textAreaValue}&b64=true`)
+    if(!this.state.requested){
+      const url = this.buildUrl()
+    Axios.get(url)
       .then((reponse) => {
-        this.setState({ audioFile: reponse.data});
+        this.setState({ audioFile: reponse.data, requested: true});
       });
+    } else {
+      console.log(this.player)
+      this.player.current.play()
+    }
+  }
+  buildUrl(base64 = true){
+    let url =`${baseUrl}&hl=${this.state.language}&src=${this.state.textAreaValue}`
+    if(base64){
+      url += '&b64=true'
+    }
+    return url
   }
   render() {
-    console.log(this.state);
+    console.log("HERERERERERERE", this.state)
     return (
       <Container fluid className="noPadding" id="fond">
         <Header />
@@ -60,12 +75,14 @@ class Content extends React.Component {
         </Row>
         <Row>
           <Col className="d-flex justify-content-end" sm={{ size: 10, order: 0, offset: 1 }}>
-            <audio hidden
+            <audio  
+              hidden
+              ref={this.player}
               controls autoPlay
               src={this.state.audioFile}>
             </audio>
             <Listen makeApiCall={() => this.callApi()} />
-            <Download />
+            <Download url={this.buildUrl(false)} />
           </Col>
         </Row>
         <Col sm={{ size: 10, order: 0, offset: 1 }}>
