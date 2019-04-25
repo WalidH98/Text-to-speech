@@ -1,6 +1,8 @@
 module.exports = {
   convertIsoCode: (isoCode) => {
     switch (isoCode) {
+    case 'fl-fl':
+      return'fi-fi';
     case 'ad-ad':
       return 'ca-es';
     case 'cn-cn':
