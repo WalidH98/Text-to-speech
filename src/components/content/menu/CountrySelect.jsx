@@ -17,7 +17,7 @@ export default class CountrySelect extends Component {
         <h6 className="title-menu">Choisir la langue:</h6>
         <div className="d-flex flex-row"></div>
         <ReactFlagsSelect
-          countries={['AD', 'CN', 'HK', 'TW', 'DK', 'NL', 'AU', 'GB', 'IN', 'US', 'FL', 'CA', 'FR', 'DE', 'IT', 'JP', 'KR', 'NO', 'PL', 'BR', 'PT', 'RU', 'MX', 'ES', 'SE']}
+          countries={['DE', 'GB', 'AU', 'BR', 'CA', 'AD', 'CN', 'KR', 'DK', 'ES', 'US', 'FL', 'FR', 'HK', 'IN', 'IT', 'JP', 'MX', 'NO', 'NL', 'PL', 'PT', 'RU', 'SE', 'TW']}
           customLabels={{'DE': 'Allemagne', 'GB': 'Anglais', 'AU': 'Australie', 'BR': 'Brésil', 'CA': 'Canada(FR)', 'AD': 'Catalan', 'CN': 'Chine', 'KR': 'Corée', 'DK': 'Danemark', 'ES': 'Espagne', 'US': 'États-Unis', 'FL': 'Finlande', 'FR': 'France', 'HK': 'Hong Kong', 'IN': 'Inde', 'IT': 'Italie', 'JP': 'Japon', 'MX': 'Mexique', 'NO': 'Norvège', 'NL': 'Pays-Bas', 'PL': 'Pologne', 'PT': 'Portugal' ,'RU': 'Russe' ,'SE': 'Suède' ,'TW': 'Taiwan' }}
           defaultCountry={this.state.selectedCountry}
           onSelect={(countryCode) => {
