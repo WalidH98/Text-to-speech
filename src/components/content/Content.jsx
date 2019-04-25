@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { convertIsoCode } from '../../utils/languageConversion';
+import { convertTitle } from '../../utils/titleConversion';
 import VoiceText from './voicetext/voicetext';
 import CountrySelect from './menu/CountrySelect';
 import Footer from '../footer/footer.jsx';
@@ -8,7 +9,7 @@ import Header from '../header/Header.jsx';
 import Listen from './listen/Listen';
 import './assets/css/content.scss';
 import Axios from 'axios';
-import Download from './equalizer-btn/Download';
+import Download from './download-btn/Download';
 
 const baseUrl = `http://api.voicerss.org/?key=${process.env.REACT_APP_TEXT_TO_SPEECH_API_KEY}`;
 
@@ -18,7 +19,8 @@ class Content extends React.Component {
     this.state = {
       language: 'fr-fr',
       textAreaValue: '',
-      audioFile: ''
+      audioFile: '',
+      title: 'Service de synthèse vocale'
     };
   }
   buildRequest(field, value) {
@@ -27,6 +29,13 @@ class Content extends React.Component {
     }
     this.setState({[field]: value});
   }
+  buildTitle(state, val) {
+    if (state === 'title') {
+      val = convertTitle(val);
+    }
+    this.setState({[state]: val});
+  }
+  
   callApi () {
     Axios.get(`${baseUrl}&hl=${this.state.language}&src=${this.state.textAreaValue}&b64=true`)
       .then((reponse) => {
@@ -38,10 +47,10 @@ class Content extends React.Component {
     return (
       <Container fluid className="noPadding" id="fond">
         <Header />
-        <h2 className='text-center title'>SERVICE DE SYNTHESE VOCALE</h2>
+        <h1 className='text-center title'>{this.state.title}</h1>
         <Row>
           <Col sm={{ size: 6, order: 0, offset: 1 }}>
-            <CountrySelect buildRequest={(field, value) => this.buildRequest(field, value)} />
+            <CountrySelect buildRequest={(field, value) => this.buildRequest(field, value)} buildTitle={(state, val) => this.buildTitle(state, val)}/>
           </Col >
         </Row >
         <Row>
@@ -55,12 +64,12 @@ class Content extends React.Component {
               controls autoPlay
               src={this.state.audioFile}>
             </audio>
-            <Listen makeApiCall={() => this.callApi()}/>
+            <Listen makeApiCall={() => this.callApi()} />
             <Download />
           </Col>
         </Row>
         <Col sm={{ size: 10, order: 0, offset: 1 }}>
-          <p className='text-description'>Saisisez du texte dans la langue de votre choix et écoutez</p>
+          <p className='text-description'>Enter text in the language of your choice and listen</p>
         </Col>
         <Footer />
       </Container>

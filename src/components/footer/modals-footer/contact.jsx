@@ -21,14 +21,14 @@ class Contact extends React.Component {
       <div>
         <NavLink className="footer-modal-links" onClick={this.toggle}>Contact</NavLink>
         <Modal id="footer-links-call-modal-global" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle} close={closeBtn}>Contactez nous</ModalHeader>
+          <ModalHeader toggle={this.toggle} close={closeBtn}>Contact us</ModalHeader>
           <ModalBody>
             <Form id="form-contact">
               <FormGroup>
                 <Label for="exampleEmail"></Label>
                 <Input type="email" name="email" id="exampleEmail" placeholder="@ mail" />
                 <Label for="exampleName"></Label>
-                <Input type="name" name="name" id="exampleName" placeholder="nom" />
+                <Input type="name" name="name" id="exampleName" placeholder="name" />
                 <Label for="exampleSelect"></Label>
                 <Input type="select" name="select" id="exampleSelect">
                   <option>Suggestions</option>
@@ -41,14 +41,14 @@ class Contact extends React.Component {
                 <Label for="exampleFile"></Label>
                 <Input type="file" name="file" id="exampleFile" />
                 <FormText color="muted">
-                  Pour des suggestions ou des bugs..
+                  For suggestions or bugs...
                 </FormText>
               </FormGroup>
             </Form>
           </ModalBody>
           <ModalFooter>
-            <Button color="dark" onClick={this.toggle}>Fermer</Button>
-            <Button onClick={this.toggle}>Envoyer</Button>
+            <Button color="dark" onClick={this.toggle}>Close</Button>
+            <Button onClick={this.toggle}>Send</Button>
           </ModalFooter>
         </Modal>
       </div>

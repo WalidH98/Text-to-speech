@@ -12,7 +12,6 @@ class LogIn extends React.Component {
     };
     this.toggle = this.toggle.bind(this);
     this.toggleAuth = this.toggleAuth.bind(this);
-
   }
   toggle() {
     this.setState(prevState => ({
@@ -29,15 +28,16 @@ class LogIn extends React.Component {
   render() {
     const closeBtn = <button className="close" onClick={this.toggle}>&times;</button>;
     const colorLogin = this.state.isConnected ? 'login-btn1' : 'login-btn2';
-    const connecte = this.state.isConnected ? 'se déconnecter' : 'se connecter';
+    const connect = this.state.isConnected ? 'Deconnexion' : 'Connexion';
+    // const displayDownload = this.state.isConnected ? 'hid' : 'disp'; <--- pour cacher le bouton download 
     // permet de se deconnecter sans passer par la modal
     const buttonAction = this.state.isConnected ? () => this.setState({isConnected: false}) : this.toggle;
     console.log(this.state);
     return (
       <div>
-        <Button className={colorLogin} outline color="info" onClick={buttonAction} >{connecte}</Button>
+        <Button className={colorLogin} outline color="info" onClick={buttonAction} >{connect}</Button>
         <Modal id="login-modal" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle} close={closeBtn}>connectez vous</ModalHeader>
+          <ModalHeader toggle={this.toggle} close={closeBtn}>connexion</ModalHeader>
           <ModalBody>
             <Form>
               <FormGroup>
@@ -51,9 +51,9 @@ class LogIn extends React.Component {
             </Form>
           </ModalBody>
           <ModalFooter>
-            <Button outline color="info" className="login-btn-modal" onClick={this.toggleAuth} >connexion
+            <Button outline color="info" className="login-btn-modal" onClick={this.toggleAuth} >Connexion
             </Button>
-            <Button className="login-close-modal" outline color="secondary" onClick={this.toggle}>Fermer</Button>
+            <Button className="login-close-modal" outline color="secondary" onClick={this.toggle}>Close</Button>
           </ModalFooter>
         </Modal>
       </div>

@@ -5,7 +5,7 @@ import './assets/css/download.scss';
 
 const Download = () => (
   <div>
-    <Button className="trad" color="secondary" id="toggler" type="button">télécharger < FaDownload className='trad-icon' size="15px" /></Button>
+    <Button /* className={displayDownload} */ className='disp' color="secondary" id="toggler" type="button">Download < FaDownload className='trad-icon' size="15px" /></Button>
   </div>
 );
 
