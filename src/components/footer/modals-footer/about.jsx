@@ -19,7 +19,7 @@ class AboutUs extends React.Component {
     const closeBtn = <button className="close" onClick={this.toggle}>&times;</button>;
     return (
       <div>
-        <NavLink className="footer-modal-links" onClick={this.toggle}>A propos</NavLink>
+        <NavLink className="footer-modal-links" onClick={this.toggle}>About</NavLink>
         <Modal id="footer-links-call-modal-global" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} close={closeBtn}>A propos de nous</ModalHeader>
           <ModalBody>

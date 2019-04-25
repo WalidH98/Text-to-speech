@@ -19,7 +19,7 @@ export default class Equalizer extends React.Component {
   render() {
     return (
       <div>
-        <Button className="listen" color="secondary" onClick={this.props.makeApiCall}>écouter< FaHeadphones className='listen-icon' size="15px" /></Button>
+        <Button className="listen" color="secondary" onClick={this.props.makeApiCall}>Listen< FaHeadphones className='listen-icon' size="15px" /></Button>
       </div>
     );
   }

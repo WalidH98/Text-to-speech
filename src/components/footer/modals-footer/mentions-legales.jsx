@@ -19,7 +19,7 @@ class MentionsLegales extends React.Component {
     const closeBtn = <button className="close" onClick={this.toggle}>&times;</button>;
     return (
       <div>
-        <NavLink className="footer-modal-links" onClick={this.toggle}>Mentions légales</NavLink>
+        <NavLink className="footer-modal-links" onClick={this.toggle}>Legal</NavLink>
         <Modal id="footer-links-call-modal-global" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} close={closeBtn}>Modal title</ModalHeader>
           <ModalBody>
