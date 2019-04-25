@@ -35,7 +35,7 @@ export default class Footer extends React.Component {
                   <NavLink href="https://twitter.com/?lang=fr" className="twitter for-responsive">< FaTwitter className='footer-icons' size="30px" /></NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://fr-fr.facebook.com/" className="facebook for-responsive">< FaFacebookSquare className='footer-icons' size="30px" /></NavLink>
+                  <NavLink href="https://www.facebook.com/WildBabel/?modal=admin_todo_tour" className="facebook for-responsive">< FaFacebookSquare className='footer-icons' size="30px" /></NavLink>
                 </NavItem>
               </Nav>
             </Col>
