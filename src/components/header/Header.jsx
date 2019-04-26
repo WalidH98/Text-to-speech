@@ -14,7 +14,7 @@ export default class Header extends React.Component {
               <img src="https://image.noelshack.com/fichiers/2019/15/6/1555110374-logblue.png" width="80" height="80  " alt="Logo" className="logo" />
             </div>
             <div className="d-flex align-baseline flex-row">
-              <LogIn />
+              <LogIn toggleAuth={() => this.props.toggleAuth()} />
             </div>
           </div>
         </Col>

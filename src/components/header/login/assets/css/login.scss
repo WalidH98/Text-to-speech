@@ -1,18 +1,21 @@
 .login-btn1 {
-  border-radius: 20px !important;
+  border-radius: 10px !important;
   margin-top: 2rem;
-  color: red !important;
-  border-color: red !important;
+  background-color: #c61e1e !important;
+  color: white !important;
+  border: none !important;
 }
 
 .login-btn2 {
-  border-radius: 20px !important;
+  border-radius: 10px !important;
   margin-top: 2rem;
-  color: green !important;
-  border-color: green !important;
+  background-color: #49AE37 !important;
+  color: white !important;
+  border: none !important;
 }
 
 #login-modal {
+  margin-top: 2rem;
   .modal-header {
     border-bottom: none !important;
   }
@@ -22,12 +25,17 @@
   }
   
   .login-btn-modal {
-    border-radius: 20px !important;
+    border-radius: 10px !important;
+    background-color: #49AE37 !important;
+    color: white !important;
+    border: none !important;
   }
   
   .login-close-modal {
-    border-radius: 20px !important;
-  }
+    border-radius: 10px !important;
+    background-color: gray !important;
+    color: white !important;
+    border: none !important;
   
   .form-control {
     border: none !important;
@@ -35,5 +43,6 @@
   .modal-content {
     background-color: rgba(255, 255, 255, 0.9) !important;
   }
+}
 }
 

@@ -20,7 +20,8 @@ class Content extends React.Component {
       language: 'fr-fr',
       textAreaValue: '',
       audioFile: '',
-      title: 'Service de synthèse vocale'
+      title: 'Service de synthèse vocale',
+      isConnected: false
     };
   }
   buildRequest(field, value) {
@@ -42,11 +43,15 @@ class Content extends React.Component {
         this.setState({ audioFile: reponse.data});
       });
   }
+
+  toggleAuth(){
+    this.setState({isConnected: !this.state.isConnected})
+  }
   render() {
     console.log(this.state);
     return (
       <Container fluid className="noPadding" id="fond">
-        <Header />
+        <Header toggleAuth={() => this.toggleAuth()} />
         <h1 className='text-center title'>{this.state.title}</h1>
         <Row>
           <Col sm={{ size: 6, order: 0, offset: 1 }}>
@@ -65,7 +70,10 @@ class Content extends React.Component {
               src={this.state.audioFile}>
             </audio>
             <Listen makeApiCall={() => this.callApi()} />
-            <Download />
+            {
+              this.state.isConnected &&
+              <Download />
+            }
           </Col>
         </Row>
         <Col sm={{ size: 10, order: 0, offset: 1 }}>

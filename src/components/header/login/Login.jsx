@@ -18,24 +18,27 @@ class LogIn extends React.Component {
       modal: !prevState.modal
     }));
   }
-  // permet de simuler une connexion utilisateur avec le bouton connexion de la modale
+  // permet de simuler une connexion utilisateur avec le bouton connexion de la modal
   toggleAuth() {
     this.setState(prevState => ({
       modal: !prevState.modal,
       isConnected: true,
     }));
+    this.props.toggleAuth()
   }
   render() {
     const closeBtn = <button className="close" onClick={this.toggle}>&times;</button>;
     const colorLogin = this.state.isConnected ? 'login-btn1' : 'login-btn2';
     const connect = this.state.isConnected ? 'Deconnexion' : 'Connexion';
-    // const displayDownload = this.state.isConnected ? 'hid' : 'disp'; <--- pour cacher le bouton download 
     // permet de se deconnecter sans passer par la modal
-    const buttonAction = this.state.isConnected ? () => this.setState({isConnected: false}) : this.toggle;
+    const buttonAction = this.state.isConnected ? () => {
+      this.props.toggleAuth()
+      this.setState({isConnected: false})
+    } : this.toggle;
     console.log(this.state);
     return (
       <div>
-        <Button className={colorLogin} outline color="info" onClick={buttonAction} >{connect}</Button>
+        <Button className={colorLogin} onClick={buttonAction} >{connect}</Button>
         <Modal id="login-modal" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} close={closeBtn}>connexion</ModalHeader>
           <ModalBody>
