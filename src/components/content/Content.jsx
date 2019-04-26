@@ -45,7 +45,7 @@ class Content extends React.Component {
   }
 
   toggleAuth(){
-    this.setState({isConnected: !this.state.isConnected})
+    this.setState({isConnected: !this.state.isConnected});
   }
   render() {
     console.log(this.state);
