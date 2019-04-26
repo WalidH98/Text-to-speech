@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
+import { FaLockOpen, FaLock } from "react-icons/fa";
+
 import './assets/css/login.scss';
 
 class LogIn extends React.Component {
@@ -29,7 +31,8 @@ class LogIn extends React.Component {
   render() {
     const closeBtn = <button className="close" onClick={this.toggle}>&times;</button>;
     const colorLogin = this.state.isConnected ? 'login-btn1' : 'login-btn2';
-    const connect = this.state.isConnected ? 'Deconnexion' : 'Connexion';
+    const connect = this.state.isConnected ? 'Deconnexion ' : 'Connexion ';
+    const lock = this.state.isConnected ? <FaLockOpen size="15px" color="white"/> : <FaLock size="12px" color="white"/>
     // permet de se deconnecter sans passer par la modal
     const buttonAction = this.state.isConnected ? () => {
       this.props.toggleAuth()
@@ -38,7 +41,7 @@ class LogIn extends React.Component {
     console.log(this.state);
     return (
       <div>
-        <Button className={colorLogin} onClick={buttonAction} >{connect}</Button>
+        <Button className={colorLogin}  onClick={buttonAction} >{connect}{lock}</Button>
         <Modal id="login-modal" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} close={closeBtn}>connexion</ModalHeader>
           <ModalBody>

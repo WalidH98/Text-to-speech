@@ -4,6 +4,10 @@
   background-color: #c61e1e !important;
   color: white !important;
   border: none !important;
+  .login-btn1:focus {
+    box-shadow: 0;
+  }
+
 }
 
 .login-btn2 {
