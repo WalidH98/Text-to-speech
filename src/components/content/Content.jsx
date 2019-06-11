@@ -11,7 +11,7 @@ import './assets/css/content.scss';
 import Axios from 'axios';
 import Download from './download-btn/Download';
 
-const baseUrl = `http://api.voicerss.org/?key=${process.env.REACT_APP_TEXT_TO_SPEECH_API_KEY}`;
+const baseUrl = `https://cors-anywhere.herokuapp.com/http://api.voicerss.org/?key=${process.env.REACT_APP_TEXT_TO_SPEECH_API_KEY}`;
 
 class Content extends React.Component {
   constructor(props) {
